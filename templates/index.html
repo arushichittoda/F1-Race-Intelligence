@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>F1 Race Intelligence</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            F1 <span>RACE INTELLIGENCE</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#project">PROJECT</a>
+            <a href="#dashboard">DASHBOARD</a>
+            <a href="#story">STORY</a>
+            <a href="#insights">INSIGHTS</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">FORMULA 1 • DATA • PERFORMANCE</p>
+
+            <h1>
+                FORMULA 1
+                <br>
+                <span>RACE INTELLIGENCE</span>
+            </h1>
+
+            <p class="hero-text">
+                Explore Formula 1 race data through interactive visualizations,
+                performance analysis, championship trends and race intelligence.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#dashboard" class="btn primary">
+                    VIEW DASHBOARD
+                </a>
+
+                <a href="#story" class="btn secondary">
+                    EXPLORE STORY
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <h2>17</h2>
+            <p>SEASONS</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>29</h2>
+            <p>CIRCUITS</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>10</h2>
+            <p>TEAMS</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>6464</h2>
+            <p>RACE OUTCOMES</p>
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT -->
+    <section class="section" id="project">
+
+        <div class="section-heading">
+            <p>THE PROJECT</p>
+
+            <h2>
+                Formula 1 Race
+                <span>Intelligence</span>
+            </h2>
+        </div>
+
+        <div class="project-content">
+
+            <div class="project-text">
+
+                <p>
+                    This project provides a visual exploration of Formula 1
+                    racing data from multiple seasons. The analysis focuses
+                    on driver performance, team performance, championship
+                    progression, tyre strategies, circuit participation
+                    and podium achievements.
+                </p>
+
+                <p>
+                    Interactive Tableau visualizations are integrated into
+                    this Flask web application, allowing users to explore
+                    Formula 1 insights directly through a web browser.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>DATA-DRIVEN ANALYSIS</h3>
+
+                <p>
+                    Transforming Formula 1 race data into meaningful
+                    visual insights.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <section class="section tableau-section" id="dashboard">
+
+        <div class="section-heading">
+
+            <p>INTERACTIVE VISUALIZATION</p>
+
+            <h2>
+                Formula 1 Race
+                <span>Dashboard</span>
+            </h2>
+
+        </div>
+
+        <div class="tableau-container">
+
+            <iframe
+                src="{{ dashboard_url }}"
+                width="100%"
+                height="900"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- STORY -->
+    <section class="section tableau-section" id="story">
+
+        <div class="section-heading">
+
+            <p>DATA STORY</p>
+
+            <h2>
+                Formula 1 Race
+                <span>Story</span>
+            </h2>
+
+        </div>
+
+        <div class="tableau-container">
+
+            <iframe
+                src="{{ story_url }}"
+                width="100%"
+                height="900"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- INSIGHTS -->
+    <section class="section" id="insights">
+
+        <div class="section-heading">
+
+            <p>KEY ANALYSIS AREAS</p>
+
+            <h2>
+                Race Intelligence
+                <span>Insights</span>
+            </h2>
+
+        </div>
+
+        <div class="insight-grid">
+
+            <div class="insight-card">
+                <h3>DRIVER PERFORMANCE</h3>
+                <p>
+                    Compare driver points and identify leading performers
+                    across the selected seasons.
+                </p>
+            </div>
+
+            <div class="insight-card">
+                <h3>TEAM PERFORMANCE</h3>
+                <p>
+                    Analyse team rankings and championship performance
+                    through interactive visualizations.
+                </p>
+            </div>
+
+            <div class="insight-card">
+                <h3>TYRE STRATEGY</h3>
+                <p>
+                    Explore the distribution and usage of different
+                    tyre compounds.
+                </p>
+            </div>
+
+            <div class="insight-card">
+                <h3>RACE PARTICIPATION</h3>
+                <p>
+                    Examine participation across countries and circuits
+                    represented in the dataset.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            F1 RACE INTELLIGENCE
+        </div>
+
+        <p>
+            Formula 1 Data Visualization & Web Integration Project
+        </p>
+
+        <p class="copyright">
+            © 2026 Formula 1 Race Intelligence
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
